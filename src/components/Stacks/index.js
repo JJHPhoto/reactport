@@ -4,7 +4,10 @@ import content from "../../content";
 
 function Stacks() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center font-dosis">
+    <div
+      className="min-h-screen flex flex-col items-center justify-center font-dosis"
+      id="stack"
+    >
       <h1 classname="text-5xl font-bold">Stacks I Use</h1>
       <div className="flex flex-wrap justify-center">
         {content.stack.tech.map((tech, index) => {
