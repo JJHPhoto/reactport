@@ -1,31 +1,32 @@
 import React from "react";
-import "./Footer.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import content from "../../content";
+// import useWindowPosition from "../hook/useWindowPosition";
+// import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer pt-3">
-      <a
-        class="btn btn-primary btn-rounded btn-sm mx-1 pb-1"
-        href="https://www.linkedin.com/in/joshuajhaller/"
-        role="button"
+    <div
+      className=" min-h-screen  flex justify-center items-center  "
+      id="footer"
+    >
+      <div
+        style={{
+          minHeight: "50vh",
+          background: "#091C29",
+        }}
+        className="w-full md:w-4/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center"
       >
-        <i class="fab fa-linkedin-in fa-2x"></i>
-      </a>
-      <a
-        class="btn btn-primary btn-rounded btn-sm mx-1 pb-1"
-        href="https://twitter.com/jpixtwit"
-        role="button"
-      >
-        <i class="fab fa-twitter fa-2x"></i>
-      </a>
-      <a
-        class="btn btn-primary btn-rounded btn-sm mx-1 pb-1"
-        href="https://github.com/JJHPhoto"
-        role="button"
-      >
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <h6 class="py-3">© Joshua J Haller 2021</h6>
+        <LazyLoadImage
+          effect="blur"
+          src={content.contact.headshot}
+          placeholderSrc={content.contact.placeholder}
+          alt="profile"
+          width="300px"
+          className="mt-10 transtion duration-2000 ease-in-out mx-auto"
+        />
+      </div>
     </div>
   );
 }
