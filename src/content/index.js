@@ -13,7 +13,7 @@ export default {
     logo: "JH",
     links: [
       { text: "Work", to: "mywork" },
-      { text: "Contact", to: "Footer" },
+      { text: "Contact", to: "footer" },
     ],
   },
   header: {
@@ -50,6 +50,7 @@ export default {
       {
         alt: "github",
         img: git,
+        link: "https://github.com/JJHPhoto",
       },
       {
         alt: "linkedIn",

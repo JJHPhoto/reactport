@@ -2,10 +2,10 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import content from "../../content";
-// import useWindowPosition from "../hook/useWindowPosition";
-// import "./Footer.css";
+import useWindowPosition from "../../hook/useWindowPosition";
 
 function Footer() {
+  const animated = useWindowPosition("header", 0.6, 4);
   return (
     <div
       className=" min-h-screen  flex justify-center items-center  "
@@ -14,7 +14,7 @@ function Footer() {
       <div
         style={{
           minHeight: "50vh",
-          background: "#091C29",
+          background: "#3f2a59",
         }}
         className="w-full md:w-4/5 md:rounded-xl shadow-2xl flex md:flex-row flex-col-reverse justify-around items-center"
       >
@@ -26,6 +26,28 @@ function Footer() {
           width="300px"
           className="mt-10 transtion duration-2000 ease-in-out mx-auto"
         />
+        <div className="font-dosis w-4/5 md:w-2/5 mt-5 transtion duration-2000">
+          <h1 className="text-5xl text-white font-bold">
+            {content.contact.title}
+          </h1>
+          <p className="w-11/12 md:max-w-xl text-xl text-white mt-10">
+            {content.contact.desc}
+          </p>
+          <div className="flex flex-wrap">
+            {content.contact.socials.map((social, index) => {
+              return (
+                <LazyLoadImage
+                  effect="blur"
+                  className="m-2"
+                  width="50px"
+                  key={index}
+                  src={social.img}
+                  alt={social.alt}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
