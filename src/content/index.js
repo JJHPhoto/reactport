@@ -12,7 +12,7 @@ export default {
   nav: {
     logo: "JH",
     links: [
-      { text: "Work", to: "mywork" },
+      { text: "Work", to: "stack" },
       { text: "Contact", to: "footer" },
     ],
   },

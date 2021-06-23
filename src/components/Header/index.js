@@ -11,11 +11,12 @@ function Header() {
   useEffect(() => {
     setAnimated(true);
   }, []);
-
   return (
+    //remove ease if I can't figure out transition// 
     <div
       className="min-h-screen flex items-center justify-center"
       style={{ background: "#3f2a59" }}
+      id="header"
     >
       <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
         <div className="w-full md:w-2/5">

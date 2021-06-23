@@ -14,18 +14,18 @@ function Navbar() {
         <ScrollLink
           to="header"
           smooth={true}
-          className="text-3xl font-bold text-white flex-1 cursor-pointer"
+          className="text-3xl font-bold text-white cursor-pointer"
         >
           <h1 className="text-3xl font-bold">
             {content.nav.logo}{" "}
             <span className="w-3 h-3 bg-pink-500 inline-block rounded-full"></span>{" "}
           </h1>
         </ScrollLink>
-        <div className="text-white text-xl">
+        <div className="text-white text-xl cursor-pointer">
           {content.nav.links.map((link, index) => {
             return (
-              <ScrollLink to={link.to} smooth={true}>
-                <span key={index} className="text-xl mr-4">
+              <ScrollLink key={index} to={link.to} smooth={true}>
+                <span className="text-xl mr-4">
                   {link.text}
                 </span>
               </ScrollLink>
