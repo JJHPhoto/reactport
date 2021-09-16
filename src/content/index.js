@@ -21,6 +21,15 @@ export default {
     text: ["Hi!", "I'm Joshua Haller", "I'm a "],
     btnText: "Learn More",
   },
+  work: {
+    title: "Projects",
+    // projects: [
+    //   {
+    //     img: pooadayImg,
+    //     alt: "pooadayLogo",
+    //   },
+    // ],
+  },
   stack: {
     title: "Stack",
     tech: [
@@ -41,7 +50,7 @@ export default {
         alt: "react",
       },
     ],
-    desc: "These are the stacks I'm most familiar with.",
+    desc: "I use the MERN stack for a majority of my projects. I have also used frameworks like Bootstrap, Bulma and Handlebars.",
   },
   contact: {
     title: "Find me!",
