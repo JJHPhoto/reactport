@@ -50,7 +50,7 @@ const ProjectDetail = () => {
   return (
     <div>
       <h1
-        classname={` ${
+        className={` ${
           animated ? "" : "translate-y-10 opacity-0"
         } transform transition duration-2000 inline-block m-4 font dosis text-xl font-bold`}
       >
@@ -63,6 +63,22 @@ const ProjectDetail = () => {
       >
         {content.work.desc}
       </p>
+      <button
+        className={`${
+          animated ? "" : "translate-y-10 opacity-0"
+        } transform transition duration-2000 px-20 py-3 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
+        href="https://pooaday.herokuapp.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          width="25px"
+          className="m-1"
+          src={content.work.githubIcon}
+          alt="Github icon"
+        />
+        <p className="text-2xl">Live App</p>
+      </button>
     </div>
   );
 };

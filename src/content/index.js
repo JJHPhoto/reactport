@@ -29,6 +29,7 @@ export default {
     imgPlaceholder: pooaday,
     projectName: "Pooaday",
     desc: "We are building an application to track daily bowel movements in a fun, non-graphic way. With this app, we hope to help users develop healthier habits. ",
+    githubIcon: git,
     // will use an array once I can figure out carousel/slider option I want to make.
     // projects: [
     //   {
