@@ -12,7 +12,7 @@ export default {
   nav: {
     logo: "JH",
     links: [
-      { text: "Work", to: "stack" },
+      { text: "Work", to: "work" },
       { text: "Contact", to: "footer" },
     ],
   },
@@ -60,12 +60,12 @@ export default {
       {
         alt: "github",
         img: git,
-        link: "https://github.com/JJHPhoto",
+        // link: "https://github.com/JJHPhoto",
       },
       {
         alt: "linkedIn",
         img: linkedIn,
-        link: "https://www.linkedin.com/in/joshuajhaller/",
+        // link: "https://www.linkedin.com/in/joshuajhaller/",
       },
     ],
     headshot: headshot,
