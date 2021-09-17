@@ -43,6 +43,8 @@ function Footer() {
                   key={index}
                   src={social.img}
                   alt={social.alt}
+                  //need to figure out how to link inside of LazyLoadImage
+                  // link={social.link}
                 />
               );
             })}

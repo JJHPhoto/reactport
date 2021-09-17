@@ -1,4 +1,4 @@
-import headerImg from "./banner-fog-city.jpg";
+import headerImg from "./headshotTibet.png";
 import bootstrapImg from "./bootstrap.png";
 import mongodbImg from "./tech logos-mongodb.png";
 import nodeImg from "./tech logos-node.jpg";
@@ -20,6 +20,7 @@ export default {
     img: headerImg,
     text: ["Hi!", "I'm Joshua Haller", "I'm a "],
     btnText: "Learn More",
+    placeholder: placeholder,
   },
   work: {
     title: "Projects",
@@ -64,9 +65,9 @@ export default {
       {
         alt: "linkedIn",
         img: linkedIn,
+        link: "https://www.linkedin.com/in/joshuajhaller/",
       },
     ],
     headshot: headshot,
-    placeholder: placeholder,
   },
 };
