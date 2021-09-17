@@ -7,6 +7,7 @@ import git from "./logo_git.png";
 import linkedIn from "./logo_linkedIn.png";
 import headshot from "./headshot.jpg";
 import placeholder from "./placeholder.jpg";
+import pooaday from "./pooaday.png";
 
 export default {
   nav: {
@@ -23,7 +24,12 @@ export default {
     placeholder: placeholder,
   },
   work: {
-    title: "Projects",
+    title: "My Projects",
+    img: pooaday,
+    imgPlaceholder: pooaday,
+    projectName: "Pooaday",
+    desc: "We are building an application to track daily bowel movements in a fun, non-graphic way. With this app, we hope to help users develop healthier habits. ",
+    // will use an array once I can figure out carousel/slider option I want to make.
     // projects: [
     //   {
     //     img: pooadayImg,
