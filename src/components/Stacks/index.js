@@ -26,6 +26,19 @@ function Stacks() {
       <p className="w-11/12 md:max-w-xl text-xl text-center mt-10">
         {content.stack.desc}
       </p>
+      <p className="w-5/12 md:max-w-xl text-xl text-center mt-10">
+        {content.stack.credit}
+      </p>
+      <button>
+        <a
+          href="https://youtu.be/8vQeMZbUt98"
+          rel="noreferrer"
+          target="_blank"
+          className="px-20 py-2 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl"
+        >
+          <p className="text-2xl">Watch here</p>
+        </a>
+      </button>
     </div>
   );
 }

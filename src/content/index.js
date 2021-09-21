@@ -12,7 +12,7 @@ import pooaday from "./pooadayMobileView.png";
 
 export default {
   nav: {
-    logo: "JH",
+    logo: "JJH",
     links: [
       { text: "Work", to: "work" },
       { text: "Contact", to: "footer" },
@@ -60,6 +60,8 @@ export default {
       },
     ],
     desc: "I use the MERN stack for a majority of my projects. I have also used frameworks like Bootstrap, Bulma and Handlebars.",
+    credit:
+      "This portfolio was based off of Daily Web Coding's React Portfolio video on Youtube.",
   },
   contact: {
     title: "Find me!",
