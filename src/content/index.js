@@ -66,18 +66,19 @@ export default {
   contact: {
     title: "Find me!",
     desc: "Full Stack Web Developer with a background in Photography and Graphic Design. Certificate in Full Stack Web Development from the University of Washington. Creative, driven, reliable, quick learner, productive working remotely, excellent communication skills from years working with diverse teams.",
-    socials: [
-      {
-        alt: "github",
-        img: git,
-        // link: "https://github.com/JJHPhoto",
-      },
-      {
-        alt: "linkedIn",
-        img: linkedIn,
-        // link: "https://www.linkedin.com/in/joshuajhaller/",
-      },
-    ],
+    // Figure out how to get this to work or use react-icons?
+    // socials: [
+    //   {
+    //     alt: "github",
+    //     img: git,
+    //     href: "https://github.com/JJHPhoto",
+    //   },
+    //   {
+    //     alt: "linkedIn",
+    //     img: linkedIn,
+    //     // link: "https://www.linkedin.com/in/joshuajhaller/",
+    //   },
+    // ],
     headshot: headshot,
   },
 };

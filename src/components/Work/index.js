@@ -69,7 +69,7 @@ const ProjectDetail = () => {
           target="_blank"
           className={`${
             animated ? "" : "translate-y-10 opacity-0"
-          } transform transition duration-2000 px-20 py-3 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
+          } transform transition duration-2000 px-20 py-2 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
         >
           <p className="text-2xl">Live App</p>
         </a>

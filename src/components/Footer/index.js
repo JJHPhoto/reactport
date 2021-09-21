@@ -3,6 +3,12 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import content from "../../content";
 import useWindowPosition from "../../hook/useWindowPosition";
+import {
+  AiOutlineGithub,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+  AiTwotoneMail,
+} from "react-icons/ai";
 
 function Footer() {
   const animated = useWindowPosition("header", 0.6, 4);
@@ -33,21 +39,35 @@ function Footer() {
           <p className="w-11/12 md:max-w-xl text-xl text-white mt-10">
             {content.contact.desc}
           </p>
-          <div className="flex flex-wrap">
-            {content.contact.socials.map((social, index) => {
-              return (
-                <LazyLoadImage
-                  effect="blur"
-                  className="m-2"
-                  width="50px"
-                  key={index}
-                  src={social.img}
-                  alt={social.alt}
-                  //need to figure out how to link inside of LazyLoadImage
-                  // link={social.link}
-                />
-              );
-            })}
+          <div className="flex flex-wrap text-5xl text-white">
+            <a
+              href="https://github.com/JJHPhoto"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiOutlineGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joshuajhaller/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              href="https://twitter.com/jpixtwit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillTwitterCircle />
+            </a>
+            <a
+              href="mailto:phone@joshuajhaller.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiTwotoneMail />
+            </a>
           </div>
         </div>
       </div>
