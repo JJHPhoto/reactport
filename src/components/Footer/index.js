@@ -2,7 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import content from "../../content";
-import useWindowPosition from "../../hook/useWindowPosition";
+// import useWindowPosition from "../../hook/useWindowPosition";
 import {
   AiOutlineGithub,
   AiFillLinkedin,
@@ -11,7 +11,7 @@ import {
 } from "react-icons/ai";
 
 function Footer() {
-  const animated = useWindowPosition("header", 0.6, 4);
+  // const animated = useWindowPosition("header", 0.6, 4);
   return (
     <div
       className=" min-h-screen  flex justify-center items-center  "
@@ -30,16 +30,16 @@ function Footer() {
           placeholderSrc={content.contact.placeholder}
           alt="profile"
           width="300px"
-          className="mt-10 transtion duration-2000 ease-in-out mx-auto"
+          className="mt-10 rounded-xl transtion duration-2000 ease-in-out mx-auto"
         />
-        <div className="font-dosis w-4/5 md:w-2/5 mt-5 transtion duration-2000">
+        <div className="font-dosis w-4/5 md:w-2/5 mt-5">
           <h1 className="text-5xl text-white font-bold">
             {content.contact.title}
           </h1>
-          <p className="w-11/12 md:max-w-xl text-xl text-white mt-10">
+          <p className="w-11/12 md:max-w-xl text-xl text-white mt-5">
             {content.contact.desc}
           </p>
-          <div className="flex flex-wrap text-5xl text-white">
+          <div className="flex flex-wrap mt-5 text-5xl text-white">
             <a
               href="https://github.com/JJHPhoto"
               target="_blank"
