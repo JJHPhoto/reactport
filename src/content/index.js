@@ -1,13 +1,14 @@
 import headerImg from "./headshotTibet.png";
-import bootstrapImg from "./bootstrap.png";
+// import bootstrapImg from "./bootstrap.png";
 import mongodbImg from "./tech logos-mongodb.png";
+import express from "./logo_express.png";
 import nodeImg from "./tech logos-node.jpg";
 import reactImg from "./tech logos-react.png";
 import git from "./logo_git.png";
 import linkedIn from "./logo_linkedIn.png";
 import headshot from "./headshot.jpg";
 import placeholder from "./placeholder.jpg";
-import pooaday from "./pooaday.png";
+import pooaday from "./pooadayMobileView.png";
 
 export default {
   nav: {
@@ -42,20 +43,20 @@ export default {
     title: "Stack",
     tech: [
       {
-        img: bootstrapImg,
-        alt: "bootstrap",
-      },
-      {
         img: mongodbImg,
         alt: "mongodb",
       },
       {
-        img: nodeImg,
-        alt: "node",
+        img: express,
+        alt: "express",
       },
       {
         img: reactImg,
         alt: "react",
+      },
+      {
+        img: nodeImg,
+        alt: "node",
       },
     ],
     desc: "I use the MERN stack for a majority of my projects. I have also used frameworks like Bootstrap, Bulma and Handlebars.",

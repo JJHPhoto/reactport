@@ -15,14 +15,13 @@ function Work() {
       <p className="text-gray-600 text-2xl font-dosis mb-10">
         I have worked on
       </p>
-      {/* Add carousel here?  */}
       <div className="flex flex-col md:flex-row justify-between items-center w-11/12">
         <LazyLoadImage
           effect="blur"
           placeholderSrc={content.work.imgPlaceholder}
           src={content.work.img}
           alt="mobile view"
-          className="m-10 transition durtaion-2000 ease-in-out z-10 md:w-3/5 w-4/5"
+          className="m-10 transition durtaion-2000 ease-in-out z-10 md:w-4/5 w-4/5"
         />
         <div
           className="transition duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block"
@@ -63,21 +62,17 @@ const ProjectDetail = () => {
       >
         {content.work.desc}
       </p>
-      <button
-        className={`${
-          animated ? "" : "translate-y-10 opacity-0"
-        } transform transition duration-2000 px-20 py-3 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
-        href="https://pooaday.herokuapp.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          width="25px"
-          className="m-1"
-          src={content.work.githubIcon}
-          alt="Github icon"
-        />
-        <p className="text-2xl">Live App</p>
+      <button>
+        <a
+          href="https://pooaday.herokuapp.com"
+          rel="noreferrer"
+          target="_blank"
+          className={`${
+            animated ? "" : "translate-y-10 opacity-0"
+          } transform transition duration-2000 px-20 py-3 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
+        >
+          <p className="text-2xl">Live App</p>
+        </a>
       </button>
     </div>
   );
