@@ -1,11 +1,8 @@
 import headerImg from "./headshotTibet.png";
-// import bootstrapImg from "./bootstrap.png";
 import mongodbImg from "./tech logos-mongodb.png";
 import express from "./logo_express.png";
 import nodeImg from "./tech logos-node.jpg";
 import reactImg from "./tech logos-react.png";
-import git from "./logo_git.png";
-import linkedIn from "./logo_linkedIn.png";
 import headshot from "./headshot.jpg";
 import placeholder from "./placeholder.jpg";
 import pooaday from "./pooadayMobileView.png";
@@ -25,19 +22,11 @@ export default {
     placeholder: placeholder,
   },
   work: {
-    title: "My Projects",
+    title: "Work",
     img: pooaday,
     imgPlaceholder: pooaday,
     projectName: "Pooaday",
     desc: "We are building an application to track daily bowel movements in a fun, non-graphic way. With this app, we hope to help users develop healthier habits. ",
-    githubIcon: git,
-    // will use an array once I can figure out carousel/slider option I want to make.
-    // projects: [
-    //   {
-    //     img: pooadayImg,
-    //     alt: "pooadayLogo",
-    //   },
-    // ],
   },
   stack: {
     title: "Stack",

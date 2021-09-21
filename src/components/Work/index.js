@@ -13,7 +13,7 @@ function Work() {
     >
       <h1 className="text-5xl font-bold">{content.work.title}</h1>
       <p className="text-gray-600 text-2xl font-dosis mb-10">
-        I have worked on
+        Projects I have done or contributed to
       </p>
       <div className="flex flex-col md:flex-row justify-between items-center w-11/12">
         <LazyLoadImage
