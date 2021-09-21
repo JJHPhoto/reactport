@@ -8,7 +8,7 @@ At the time, I had never heard of using Tailwind for my CSS, but I thought I’d
 
 So, below is a link to my “in progress” portfolio. Logan Lowder recently challenged me to “work in the open” on my portfolio as a way to get feedback on it. Logan has been a great resource for me throughout this entire process. I still remember talking to him back when I started and being surprised that I had picked Full Stack. An area he has been working in for over 5 years. White boarding with him has been so helpful. So when he challenged me, I took his advice.
 
-I have taken a few days to get things “ready’ for working in the open. I did want to track down a few questions I had about the design in the portfolio. Which led to some messages with Timo Zimmermann about Svelte. Big thank you to Timo taking the time to answer my questions! I will be posting updates on my Twitter, follow along if you’d like to! Thanks!
+I have taken a few days to get things “ready’ for working in the open. I did want to track down a few questions I had about the design in the portfolio. Which led to some messages with [Timo Zimmermann](https://timo.engineer/) about Svelte. Big thank you to Timo taking the time to answer my questions! I will be posting updates on my [Twitter](https://twitter.com/jpixtwit), follow along if you’d like to! Thanks!
 
 ### Resources
 
