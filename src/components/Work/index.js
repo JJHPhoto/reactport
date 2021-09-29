@@ -16,14 +16,61 @@ function Work() {
         Projects I have done or contributed to
       </p>
       <div className="flex flex-col md:flex-row justify-between items-center w-11/12">
-        <LazyLoadImage
+        {content.work.projects.map((projects, index) => {
+          return (
+            <div>
+              <div
+                key={index}
+                className={`m-10 transition durtaion-2000 ease-in-out z-10 md:w-4/5 w-4/5`}
+              >
+                <LazyLoadImage src={projects.img} alt={projects.alt} />
+                <div
+                  key={index}
+                  className={`transition duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block`}
+                  style={{
+                    border: "1px solid #e5ecf9",
+                    transform: animated
+                      ? "translate(-10%, 0%) rotate3d(0.540, -0.95, 0 22deg) rotateZ(7deg)"
+                      : "",
+                    boxShadow:
+                      "35px 50px 90px -25px rgba(50, 50, 95, 0.5), 20px 35px 75px -35px rgba(0, 0, 0, 0.5)",
+                  }}
+                >
+                  <ProjectDetail />
+                </div>
+                {/* <div className="flex justify-center items-center md:hidden">
+                  <ProjectDetail />
+                </div> */}
+              </div>
+              {/* <span
+                key={index}
+                className={`transition duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block`}
+                style={{
+                  border: "1px solid #e5ecf9",
+                  transform: animated
+                    ? "translate(-10%, 0%) rotate3d(0.540, -0.95, 0 22deg) rotateZ(7deg)"
+                    : "",
+                  boxShadow:
+                    "35px 50px 90px -25px rgba(50, 50, 95, 0.5), 20px 35px 75px -35px rgba(0, 0, 0, 0.5)",
+                }}
+              >
+                <ProjectDetail />
+              </span> */}
+              {/* <div className="flex justify-center items-center md:hidden">
+                <ProjectDetail />
+              </div> */}
+            </div>
+          );
+        })}
+
+        {/* <LazyLoadImage
           effect="blur"
           placeholderSrc={content.work.imgPlaceholder}
           src={content.work.img}
-          alt="mobile view"
+          alt="Pooaday mobile view"
           className="m-10 transition durtaion-2000 ease-in-out z-10 md:w-4/5 w-4/5"
-        />
-        <div
+        /> */}
+        {/* <div
           className="transition duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block"
           style={{
             border: "1px solid #e5ecf9",
@@ -38,7 +85,7 @@ function Work() {
         </div>
         <div className="flex justify-center items-center md:hidden">
           <ProjectDetail />
-        </div>
+        </div> */}
       </div>
     </div>
   );

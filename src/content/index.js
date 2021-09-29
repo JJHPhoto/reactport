@@ -24,10 +24,22 @@ export default {
   },
   work: {
     title: "Work",
-    img: pooaday,
-    imgPlaceholder: pooaday,
-    projectName: "Pooaday",
-    desc: "We are building an application to track daily bowel movements in a fun, non-graphic way. With this app, we hope to help users develop healthier habits. ",
+    projects: [
+      {
+        img: pooaday,
+        alt: "pooaday mobile view",
+        imgPlaceholder: pooaday,
+        projectName: "Pooaday",
+        desc: "We are building an application to track daily bowel movements in a fun, non-graphic way. With this app, we hope to help users develop healthier habits. ",
+      },
+      {
+        img: progressing,
+        alt: "progressing mobile view",
+        imgPlaceholder: progressing,
+        projectName: "Progressing",
+        desc: " Progressing description",
+      },
+    ],
   },
   stack: {
     title: "Stack",
