@@ -39,7 +39,7 @@ function Footer() {
           <p className="w-11/12 md:max-w-xl text-xl text-white mt-5">
             {content.contact.desc}
           </p>
-          <div className="flex flex-wrap mt-5 text-5xl text-white">
+          <div className="flex flex-wrap mt-6 text-5xl text-white">
             <a
               href="https://github.com/JJHPhoto"
               target="_blank"

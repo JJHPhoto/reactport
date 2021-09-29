@@ -11,7 +11,7 @@ function Work() {
       style={{ background: "#FEFEFE" }}
       id="work"
     >
-      <h1 className="text-5xl font-bold">{content.work.title}</h1>
+      <h1 className="text-5xl mt-5 font-bold">{content.work.title}</h1>
       <p className="text-gray-600 text-2xl font-dosis mb-10">
         Projects I have done or contributed to
       </p>

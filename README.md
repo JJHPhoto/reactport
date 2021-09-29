@@ -10,6 +10,10 @@ So, below is a link to my “in progress” portfolio. Logan Lowder recently cha
 
 I have taken a few days to get things “ready’ for working in the open. I did want to track down a few questions I had about the design in the portfolio. Which led to some messages with [Timo Zimmermann](https://timo.engineer/) about Svelte. Big thank you to Timo taking the time to answer my questions! I will be posting updates on my [Twitter](https://twitter.com/jpixtwit), follow along if you’d like to! Thanks!
 
+## First update
+
+My first update is focused on adding more projects to my portfolio page. I rewrote some of the code in the Work component and the index.js content file. This allowed me to add more projects to the Work section of my portfolio. There were a few other visual elements that I wanted to change with some of my margins. I noticed a few were higher/closer to some content that I'd like.
+
 ### Resources
 
 [Beginner React portfolio](https://www.youtube.com/watch?v=8vQeMZbUt98&list=WL&index=18&t=28s)

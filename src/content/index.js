@@ -6,6 +6,7 @@ import reactImg from "./tech logos-react.png";
 import headshot from "./headshot.jpg";
 import placeholder from "./placeholder.jpg";
 import pooaday from "./pooadayMobileView.png";
+import progressing from "./progressingMobileView.png";
 
 export default {
   nav: {
