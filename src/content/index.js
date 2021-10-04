@@ -7,6 +7,7 @@ import headshot from "./headshot.jpg";
 import placeholder from "./placeholder.jpg";
 import pooaday from "./pooadayMobileView.png";
 import progressing from "./progressingMobileView.png";
+import bookshelves from "./bookshelvesMobileView.png";
 
 export default {
   nav: {
@@ -22,24 +23,23 @@ export default {
     btnText: "Learn More",
     placeholder: placeholder,
   },
-  work: {
-    title: "Work",
-    projects: [
-      {
-        img: pooaday,
-        alt: "pooaday mobile view",
-        imgPlaceholder: pooaday,
-        projectName: "Pooaday",
-        desc: "We are building an application to track daily bowel movements in a fun, non-graphic way. With this app, we hope to help users develop healthier habits. ",
-      },
-      {
-        img: progressing,
-        alt: "progressing mobile view",
-        imgPlaceholder: progressing,
-        projectName: "Progressing",
-        desc: " Progressing description",
-      },
-    ],
+  pooaday: {
+    projectName: "Pooaday",
+    img: pooaday,
+    imgPlaceholder: pooaday,
+    desc: "For users who are in recovery from an illness, like cancer, tracking bowel movements is a daily task. Pooaday made this easy with its user-friendly design. Pooaday could also be used by parents of toddlers who often need to track bowel movements, feeding times and sleep patterns. ",
+  },
+  progressing: {
+    projectName: "Progressing",
+    img: progressing,
+    imgPlaceholder: progressing,
+    desc: "If you have ever wanted an app that allows you to create customized goals, Progressing is the app for you. Progressing lets you create your goals and then break those goals down into individual tasks. These are then tracked in your dashboard where you can see your progress and also create new goals.",
+  },
+  bookshelves: {
+    projectName: "My Bookshelves",
+    img: bookshelves,
+    imgPlaceholder: bookshelves,
+    desc: "Bookshelves description.",
   },
   stack: {
     title: "Stack",

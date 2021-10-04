@@ -14,7 +14,7 @@ I have taken a few days to get things “ready’ for working in the open. I did
 
 My first update is focused on adding more projects to my portfolio page. I rewrote some of the code in the Work component and the index.js content file. This allowed me to add more projects to the Work section of my portfolio. There were a few other visual elements that I wanted to change with some of my margins. I noticed a few were higher/closer to some content that I'd like.
 
-My first attempt to populate my Work component was to create an array of objects in my content `index.js` and then `.map()` over it. This sort of worked but then my images were printing first and then the cards. I also need to account for the `ProjectDetail` function having the right properties.
+My first attempt to populate my Work component was to create an array of objects in my content `index.js` and then `.map()` over it. This sort of worked but then my images were printing first and then the cards. I also need to account for the `ProjectDetail` function having the right properties. The main issue was going to be figuring out how to pass an `a href` using `.map()`. I also needed to work on the spacing so that each project had its own space. The way it looked was to have each project side by side. I decided to try and create individual components for each project. I wanted things to look good but also knew that I was struggling trying to smash too many puzzle pieces together. It seemed simpler to just create components that could live inside my Work component.
 
 ### Resources
 

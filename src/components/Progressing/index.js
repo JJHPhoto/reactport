@@ -1,0 +1,71 @@
+import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import content from "../../content";
+import useWindowPosition from "../../hook/useWindowPosition";
+
+function Progressing() {
+  const animated = useWindowPosition("header", 0.6);
+  return (
+    <div className="min-h-screen flex flex-col md:flex-row justify-between items-center w-11/12">
+      <LazyLoadImage
+        effect="blur"
+        placeholderSrc={content.progressing.imgPlaceholder}
+        src={content.progressing.img}
+        alt="mobile view"
+        className="m-10 transition durtaion-2000 ease-in-out z-10 md:w-4/5 w-4/5"
+      />
+      <div
+        className="transition duration-2000 ease-in-out p-10 max-w-xl lg:max-w-3xl rounded-lg hidden md:block"
+        style={{
+          border: "1px solid #e5ecf9",
+          transform: animated
+            ? "translate(-10%, 0%) rotate3d(0.540, -0.95, 0 22deg) rotateZ(7deg)"
+            : "",
+          boxShadow:
+            "35px 50px 90px -25px rgba(50, 50, 95, 0.5), 20px 35px 75px -35px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        <ProjectDetail />
+      </div>
+      <div className="flex justify-center items-center md:hidden">
+        <ProjectDetail />
+      </div>
+    </div>
+  );
+}
+
+const ProjectDetail = () => {
+  const animated = useWindowPosition("header", 0.6);
+  return (
+    <div>
+      <h1
+        className={` ${
+          animated ? "" : "translate-y-10 opacity-0"
+        } transform transition duration-2000 inline-block m-4 font dosis text-xl font-bold`}
+      >
+        {content.progressing.projectName}
+      </h1>
+      <p
+        className={` ${
+          animated ? "" : "translate-y-10 opacity-0"
+        } transform transition duration-2000 inline-block w-11/12 m-4 text-xl font-dosis`}
+      >
+        {content.progressing.desc}
+      </p>
+      <button>
+        <a
+          href="https://progressing-pod10.herokuapp.com"
+          rel="noreferrer"
+          target="_blank"
+          className={`${
+            animated ? "" : "translate-y-10 opacity-0"
+          } transform transition duration-2000 px-20 py-2 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
+        >
+          <p className="text-2xl">Live App</p>
+        </a>
+      </button>
+    </div>
+  );
+};
+
+export default Progressing;
