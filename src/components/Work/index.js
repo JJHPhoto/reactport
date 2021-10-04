@@ -20,9 +20,9 @@ function Work() {
       <div className="flex flex-col md:flex-row justify-between items-center w-11/12">
         <Progressing />
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center w-11/12">
+      {/* <div className="flex flex-col md:flex-row justify-between items-center w-11/12">
         <Bookshelves />
-      </div>
+      </div> */}
     </div>
   );
 }

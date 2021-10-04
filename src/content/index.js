@@ -39,7 +39,7 @@ export default {
     projectName: "My Bookshelves",
     img: bookshelves,
     imgPlaceholder: bookshelves,
-    desc: "Bookshelves description.",
+    desc: "A single page app that lets you search for any book on Google.",
   },
   stack: {
     title: "Stack",
