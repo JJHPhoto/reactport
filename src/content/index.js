@@ -1,8 +1,8 @@
 import headerImg from "./headshotTibet.png";
-import mongodbImg from "./tech logos-mongodb.png";
-import express from "./logo_express.png";
-import nodeImg from "./tech logos-node.jpg";
-import reactImg from "./tech logos-react.png";
+import mongodbImg from "./stack_logos-mongodb.png";
+import express from "./stack_logos_express.png";
+import nodeImg from "./stack_logos-node.jpg";
+import reactImg from "./stack_logos-react.png";
 import headshot from "./headshot.jpg";
 import placeholder from "./placeholder.jpg";
 import pooaday from "./pooadayMobileView.png";
